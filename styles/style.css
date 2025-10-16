@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid #541105;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* espace entre les liens */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet hover */
+nav a:hover {
+    color: #54332a; /* doré élégant */
+    transform: scale(1.05);
+}
+
+/* Groupes gauche et droite */
+.nav-droite,
+.nav-gauche {
+    display: flex;
+    align-items: center;
+}
+
+.accueil {
+    margin: 30px;
+}
+.accueil img {
+    width: calc(100% - 60px);
+    height: 50vh;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.9;
+    display: block;
+}
