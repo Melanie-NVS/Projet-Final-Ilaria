@@ -3,19 +3,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-bottom: 2px solid #541105;
 }
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 0 15px; /* espace entre les liens */
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 25px;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* Effet hover */
+/* Effet hover nav a */
 nav a:hover {
     color: #54332a; /* doré élégant */
     transform: scale(1.05);
@@ -28,14 +26,70 @@ nav a:hover {
     align-items: center;
 }
 
+/* bouton S'inscrire */
+.btn-inscrire {
+  display: inline-block;
+  background: #ff7f50;  /* couleur de fond */
+  color: #fff;          /* texte */
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.15s ease, transform 0.08s ease;
+  border: 2px solid transparent;
+}
+
+.btn-inscrire:hover {
+  background: #ff6a2a;
+  transform: translateY(-1px);
+}
+
+.btn-inscrire:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,127,80,0.25);
+}
+
 .accueil {
-    margin: 30px;
+  margin: 10px;
+  /* Utiliser flexbox pour centrer l'image horizontalement (et verticalement si besoin) */
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;    /* centre verticalement si .accueil a une hauteur définie */
 }
 .accueil img {
-    width: calc(100% - 60px);
-    height: 50vh;
-    border-radius: 10px;
-    object-fit: cover;
-    opacity: 0.9;
-    display: block;
+  width: calc(100% - 60px);
+  max-width: 100%;
+  height: 80vh;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.9;
+  display: block;
+}
+
+.accueil {
+  position: relative;
+}
+.accueil-texte {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 40%;
+  text-align: right;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.accueil-texte h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.accueil-texte p {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 400;
 }
