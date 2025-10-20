@@ -28,15 +28,14 @@ nav a:hover {
 
 /* bouton S'inscrire */
 .btn-inscrire {
-  display: inline-block;
+  display: inline-block; /* permet de définir des dimensions et marges/paddings */
   background: #ff7f50;  /* couleur de fond */
   color: #fff;          /* texte */
-  padding: 0.45rem 0.9rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.15s ease, transform 0.08s ease;
-  border: 2px solid transparent;
+  padding: 0.45rem 0.9rem; /* espacement interne */
+  border-radius: 50px; /* bords arrondis */
+  text-decoration: none; /* supprimer le soulignement */
+  font-weight: 600; /* poids de la police */
+  transition: background-color 0.15s ease, transform 0.08s ease; /* transition douce */
 }
 
 .btn-inscrire:hover {
@@ -72,8 +71,9 @@ nav a:hover {
 
 .accueil-texte {
   position: absolute;
-  right: 5%;
   top: 0;
+  left: 50%;
+  right: 5%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -81,14 +81,12 @@ nav a:hover {
   color: #fff;
   padding: 2rem 2.5rem;
   border-radius: 12px;
-  max-width: 40%;
   text-align: right;
 }
 .accueil-texte h1 {
   position: absolute;
   top: 10px;
-  right: 2.5rem;
-  left: 2.5rem;
+  width: 100%;
   margin: 0;
   font-size: 5rem;
   font-weight: 700;
