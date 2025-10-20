@@ -99,3 +99,60 @@ nav a:hover {
   font-size: 1.15rem;
   font-weight: 400;
 }
+
+/* ---- Bouton loupe ---- */
+.loupe {
+  background: #ff7f50;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.loupe:hover {
+  transform: scale(1.1);
+}
+
+.loupe svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* ---- Zone recette ---- */
+#recette-zone {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+  box-sizing: border-box; /* ✅ important pour éviter les coupures */
+  padding: 0 5px; /* un petit padding latéral pour respirer */
+}
+
+#recette-zone.active {
+  max-height: 250px;
+  opacity: 1;
+}
+
+#recette-zone textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff7f50;
+  border-radius: 10px;
+  resize: vertical;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box; /* ✅ évite les débordements du cadre */
+  display: block;
+}
