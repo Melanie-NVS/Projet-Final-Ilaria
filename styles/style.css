@@ -169,3 +169,35 @@ nav a:hover {
   box-sizing: border-box; /* ✅ évite les débordements du cadre */
   display: block;
 }
+
+/*PAGE CONTACT*/
+
+.conteneur-contact {
+    display: flex;
+    height: 600px;
+    justify-content: space-between; /* ou center, ou flex-start selon besoin */
+    gap: 2rem; /* espace entre les deux parties */
+    padding: 2rem; /* espace autour du conteneur */
+    flex-wrap: wrap; /* optionnel, pour que ça passe en colonne sur petits écrans */
+}
+
+.partieGauche, .partieDroite {
+    flex: 1; /* ou une largeur fixe si tu préfères, ex: width: 45%; */
+    min-width: 300px; /* pour éviter qu'elles soient trop petites */
+}
+
+.partieGauche {
+    padding-right: 1rem;
+}
+
+.partieDroite {
+    padding-left: 1rem;
+    background-color: #ff7f50;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
